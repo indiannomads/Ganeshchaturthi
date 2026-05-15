@@ -1,2 +1,0 @@
-# Ganeshchaturthi
-website for Ganeshchaturthi
