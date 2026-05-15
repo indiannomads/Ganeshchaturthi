@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganeshotsav 2026 | Indian Nomads Ingolstadt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Kalam:wght@300;700&family=Great+Vibes&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --midnight-blue: #0a0a1a; 
+            --maroon: #630000;
+            --gold: #b8860b; 
+            --bright-gold: #FFD700;
+            --white: #ffffff;
+            --off-white: #fdfdfd;
+            --button-orange: #ff9800;
+            --whatsapp-green: #25D366;
+            --text-dark: #2c1810;
+        }
+
+        html, body {
+            margin: 0; padding: 0; min-height: 100%; width: 100%;
+            background-color: var(--midnight-blue);
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden; 
+        }
+
+        .main-container { position: relative; width: 100vw; display: flex; flex-direction: column; align-items: center; }
+        
+        .roller-top {
+            position: fixed; top: 0; left: 0; width: 100%; height: 60px;
+            background: linear-gradient(to bottom, #2a150e, #5c2e1f, #2a150e);
+            border-bottom: 3px solid var(--bright-gold); z-index: 100;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+        }
+
+        .roller-bottom { 
+            width: 100%; height: 60px;
+            background: linear-gradient(to bottom, #2a150e, #5c2e1f, #2a150e);
+            border-top: 3px solid var(--bright-gold);
+            box-shadow: 0 -5px 25px rgba(0,0,0,0.7);
+            z-index: 100; position: absolute; top: 0; 
+            transition: top 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-paper {
+            position: relative; width: 100%; height: 0;
+            background: var(--maroon) url('https://www.transparenttextures.com/patterns/dark-leather.png');
+            transition: height 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden; display: flex; justify-content: center;
+            border-left: 12px solid var(--bright-gold); border-right: 12px solid var(--bright-gold);
+            box-sizing: border-box;
+        }
+
+        .main-container.active .scroll-paper { height: auto; min-height: 100vh; overflow: visible; }
+        .main-container.active .roller-bottom { position: relative; top: 0; }
+
+        .content { width: 100%; padding: 110px 0 60px 0; text-align: center; color: var(--white); opacity: 0; transition: opacity 1s ease 1.5s; z-index: 5; }
+        .main-container.active .content { opacity: 1; }
+
+        .main-logo { width: 80px; height: auto; margin-bottom: 10px; filter: drop-shadow(0 0 10px var(--bright-gold)); }
+        .main-title { 
+            font-family: 'Cinzel Decorative', serif;
+            background: linear-gradient(to bottom, #fff, var(--bright-gold));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            font-size: clamp(2.2rem, 8vw, 4rem); margin: 10px 0;
+        }
+
+        .info-container-box {
+            position: relative; background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px); border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 60px 15px 60px 15px;
+            padding: 40px 20px; margin: 30px 15px; width: calc(100% - 30px);
+            box-sizing: border-box; text-align: center;
+        }
+
+        .impact-badge {
+            position: relative; background: linear-gradient(135deg, #ffd700 0%, #b8860b 50%, #ffd700 100%);
+            color: var(--maroon); padding: 15px 40px; display: inline-block;
+            border-radius: 5px; font-family: 'Cinzel Decorative'; font-weight: 900;
+            font-size: 1.8rem; letter-spacing: 2px; margin-top: 25px; border: 2px solid #fff;
+        }
+
+        .map-link-combined { 
+            color: var(--bright-gold); 
+            text-decoration: none; 
+            font-weight: 600; 
+            display: inline-block; 
+            margin-top: 10px;
+            transition: opacity 0.3s ease;
+        }
+        .map-link-combined:hover { opacity: 0.8; text-decoration: underline; }
+		
+		
+        /* ========================================= */
+        /* CSS MARKER: Purpose section        */
+        /* ========================================= */
+		
+        .purpose-section { 
+            padding: 50px 30px; text-align: left; 
+            background: var(--off-white); 
+            color: var(--text-dark); 
+            margin: 40px 15px; width: calc(100% - 30px); 
+            border-radius: 15px; box-sizing: border-box; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid var(--bright-gold);
+        }
+
+        .section-label { color: var(--gold); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px; display: block; text-transform: uppercase; letter-spacing: 2px; }
+        .section-headline { font-family: 'Cinzel Decorative'; font-size: 2rem; color: var(--maroon); margin-bottom: 15px; line-height: 1.2; }
+        .section-subtext { font-size: 1rem; line-height: 1.6; color: #444; margin-bottom: 35px; }
+		
+		
+		/* ========================================= */
+        /* CSS MARKER: THE SPLIT SYSTEM START        */
+        /* ========================================= */
+		
+		
+        /* THE SPLIT SYSTEM */
+        .journey-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+            align-items: flex-start;
+        }
+        .journey-left { 
+            flex: 1.4;
+            min-width: 300px; 
+            text-align: left; /* Keeps text inside journey left-aligned */
+        }
+        .journey-right { 
+            flex: 1;
+            min-width: 280px; 
+			position: relative;
+			height: 650px;
+        }
+
+        .journey-title { font-family: 'Cinzel Decorative'; font-size: 1.8rem; color: var(--maroon); border-bottom: 2px solid var(--gold); padding-bottom: 10px; margin-top: 0; }
+        .journey-text { color: #333; font-size: 1rem; line-height: 1.8; margin-top: 20px; }
+		
+		
+		/* ========================================= */
+        /* CSS MARKER: TIMELINE DESIGN START         */
+        /* ========================================= */
+		
+		
+        /* TIMELINE */
+        .timeline-container { margin-top: 30px; }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            border-left: 2px solid var(--gold);
+        }
+        .timeline-item:last-child { border-left: 2px solid transparent; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px; top: 5px;
+            width: 16px; height: 16px;
+            background: var(--maroon);
+            border: 2px solid var(--bright-gold);
+            border-radius: 50%;
+        }
+        .timeline-year { display: block; font-weight: 900; color: #4a4ae2; font-size: 0.9rem; }
+        .timeline-title { font-weight: 700; color: var(--maroon); font-size: 1.1rem; }
+        .timeline-desc { font-size: 0.9rem; color: #555; line-height: 1.4; margin-top: 5px; }
+
+        /* SCATTERED COLLAGE - RIGHT SIDE */
+		
+
+		/* Specific class for Scattered Photos only */
+		.scatter-photo {
+			position: absolute;
+			width: 260px; 
+			background: #fff;
+			padding: 12px;
+			border-radius: 4px;
+			box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+			transition: transform 0.3s ease, z-index 0.2s;
+			cursor: pointer;
+		}
+
+		.scatter-photo img { 
+			width: 100%; 
+			height: 280px; 
+			object-fit: cover; 
+			display: block; 
+		}
+
+		/* Spacing and Scattering */
+		.scatter-photo:nth-child(1) { 
+			top:120px ; left: 5%; 
+			z-index: 1; 
+		}
+
+		.scatter-photo:nth-child(2) { 
+			top: 220px; right:5%; 
+			z-index: 2; 
+		}
+
+		.scatter-photo:nth-child(3) { 
+			top: 480px; left: 12%;  
+			z-index: 3; 
+		}
+		
+		.scatter-photo:nth-child(4) { 
+			top: 820px; /* Adjust spacing */
+			right: 15%; 
+			z-index: 4; 
+		}
+		.scatter-photo:hover {
+			z-index: 100;
+			transform: scale(1.08) rotate(0deg);
+		}
+
+		/* GALLERY GRID FIX (So these don't scatter/fly away) */
+		.gallery-grid .photo-frame {
+			position: relative; /* Overrides the absolute positioning */
+			width: 100%;
+			transform: none !important;
+			top: auto !important;
+			left: auto !important;
+			margin-bottom: 10px;
+		}
+		
+		/* ========================================= */
+        /* CSS MARKER: Revealing Soon         */
+        /* ========================================= */
+		
+		
+		.reveal-wrapper { position: relative; padding: 10px; }
+        .hold-content { filter: blur(4px); opacity: 0.4; pointer-events: none; }
+        .reveal-banner {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-2deg);
+            background: linear-gradient(135deg, var(--button-orange), #ff4500);
+            color: white; padding: 15px 40px; font-family: 'Cinzel Decorative', serif;
+            font-weight: 900; z-index: 10; border-radius: 5px; border: 3px solid var(--bright-gold);
+        }
+
+        .bento-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 25px; }
+        @media (min-width: 600px) { .bento-grid { grid-template-columns: 1fr 1fr; } }
+        .bento-card { padding: 20px; border-radius: 10px; background: #fff; border-left: 4px solid var(--gold); }
+
+        .action-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 40px 0; }
+        .social-cta {
+            padding: 18px 35px; border-radius: 50px; text-decoration: none;
+            font-weight: 800; font-family: 'Poppins'; display: flex; align-items: center; gap: 10px;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .social-cta:hover { transform: scale(1.05); }
+        .insta-btn { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; }
+        .wa-btn { background: var(--whatsapp-green); color: white; }
+
+        .petal { position: absolute; border-radius: 150% 0 150% 0; opacity: 0.7; animation: petalFall 10s linear infinite; }
+        @keyframes petalFall { 0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; } 100% { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
+
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+        
+        .footer-banner {
+            margin-top: 60px; padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.3); border-top: 1px solid var(--bright-gold);
+            border-bottom: 1px solid var(--bright-gold); width: 100%;
+        }
+		
+		
+		/* ========================================= */
+        /* CSS MARKER: Revealing Soon         */
+        /* ========================================= */
+		
+		/* Popup Styles */
+		.popup-overlay {
+			position: fixed;
+			top: 0; left: 0; width: 100%; height: 100%;
+			background: rgba(10, 10, 26, 0.9); /* Using your Midnight Blue with transparency */
+			backdrop-filter: blur(10px);
+			display: flex; justify-content: center; align-items: center;
+			z-index: 2000;
+		}
+
+		.popup-box {
+			background: var(--off-white);
+			padding: 40px;
+			border-radius: 30px; /* Matching your bento/info box style */
+			max-width: 550px;
+			width: 90%;
+			text-align: center;
+			border: 3px solid var(--bright-gold);
+			box-shadow: 0 0 30px rgba(255, 215, 0, 0.3); /* Gold glow */
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.popup-box h2 { 
+			font-family: 'Cinzel Decorative', serif; 
+			color: var(--maroon); 
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+		}
+
+		.popup-box p { 
+			color: var(--text-dark); 
+			font-size: 1rem;
+			margin-bottom: 30px;
+		}
+
+		.popup-actions {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+			justify-content: center;
+		}
+
+		.popup-btn {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px 10px;
+			text-decoration: none;
+			border-radius: 15px;
+			transition: all 0.3s ease;
+			border: 2px solid transparent;
+			text-align: center;
+		}
+
+		/* Button 1: Food Stall (Maroon/Gold Theme) */
+		.food-btn { 
+			background: var(--maroon); 
+			color: var(--white); 
+		}
+		.food-btn .btn-text span { color: var(--bright-gold); }
+
+		/* Button 2: Sponsor (Gold/Maroon Theme) */
+		.sponsor-btn { 
+			background: var(--bright-gold); 
+			color: var(--maroon); 
+		
+		}
+		.sponsor-btn .btn-text span { color: #5c2e1f; }
+		
+		/* Button 3: Donation (Royal Spiritual Blue) */
+		.donation-btn { 
+			background: linear-gradient(145deg, #283593, #1a237e); 
+			color: #FFD700; /* Gold text on blue looks royal */
+		}
+		.donation-btn .btn-text span { color: var(--white); opacity: 0.9; }
+
+		.popup-btn:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+			border-color: var(--bright-gold);
+		}
+
+		.btn-icon { font-size: 2.2rem; margin-bottom: 8px; }
+		.btn-text strong { font-family: 'Cinzel Decorative'; font-size: 1rem; display: block; }
+		.btn-text span { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+		.popup-close {
+			margin-top: 30px;
+			background: none;
+			border: none;
+			color: var(--maroon);
+			text-decoration: underline;
+			cursor: pointer;
+			font-family: 'Kalam';
+			font-size: 1.1rem;
+			font-weight: 700;
+		}
+
+		/* Mobile fix */
+		@media (max-width: 500px) {
+			.popup-actions { flex-direction: column; }
+		}
+		
+		/* ========================================= */
+        /* CSS MARKER: Gallery         */
+        /* ========================================= */
+		
+		
+		/* HORIZONTAL SLIDER SYSTEM */
+		.gallery-slider {
+			display: flex;
+			overflow-x: auto;
+			gap: 20px;
+			padding: 20px 10px;
+			scroll-snap-type: x mandatory;
+			scrollbar-width: thin;
+			scrollbar-color: var(--bright-gold) transparent;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		/* Hide scrollbar for Chrome/Safari/Opera */
+		.gallery-slider::-webkit-scrollbar {
+			height: 8px;
+		}
+		.gallery-slider::-webkit-scrollbar-thumb {
+			background: var(--bright-gold);
+			border-radius: 10px;
+		}
+
+		.gallery-item {
+			flex: 0 0 300px; /* Width of each item */
+			scroll-snap-align: start;
+			position: relative;
+			border-radius: 12px;
+			overflow: hidden;
+			background: #000;
+			border: 2px solid var(--gold);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+			transition: transform 0.3s ease;
+		}
+
+		.gallery-item:hover {
+			transform: translateY(-10px);
+		}
+
+		.gallery-item img, 
+		.gallery-item video {
+			width: 100%;
+			height: 450px; /* Fixed height for consistency */
+			object-fit: cover;
+			display: block;
+		}
+		/* Row Specific Styles */
+        .photo-item img { height: 350px !important; }
+        .video-item { flex: 0 0 350px !important; }
+        .video-item video { height: 220px !important; }
+
+        .row-label {
+            font-family: 'Kalam', cursive; color: var(--maroon);
+            font-size: 1.2rem; margin: 30px 0 5px 0; display: block;
+        }
+        .video-badge {
+            position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.6);
+            color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.7rem;
+            font-weight: 700; pointer-events: none; z-index: 2;
+        }
+
+		/* Video Play Overlay Icon */
+		.video-badge {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: rgba(0,0,0,0.6);
+			color: white;
+			padding: 5px 10px;
+			border-radius: 20px;
+			font-size: 0.7rem;
+			font-weight: 700;
+			pointer-events: none;
+		}
+
+		/* Navigation Hint */
+		.slider-hint {
+			text-align: right;
+			font-family: 'Kalam';
+			color: var(--gold);
+			font-size: 0.9rem;
+			margin-bottom: 5px;
+			display: block;
+		}
+		/* Festival Impact Section Styling */
+		.impact-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 30px;
+			margin-top: 25px;
+			padding: 20px 0;
+		}
+
+		.impact-stat-card {
+			text-align: left;
+			padding: 10px;
+		}
+
+		.stat-number {
+			font-size: 2.5rem;
+			font-weight: 900;
+			margin: 0;
+			display: block;
+			line-height: 1;
+		}
+
+		.stat-label {
+			font-size: 0.9rem;
+			color: #666;
+			margin-top: 8px;
+			display: block;
+			font-weight: 600;
+		}
+
+		/* Colors from your image */
+		.stat-purple { color: #5c4ee5; }
+		.stat-orange { color: #ff5e14; }
+		.stat-green  { color: #00a86b; }
+		.stat-pink   { color: #e91e63; }
+
+		@media (max-width: 480px) {
+			.stat-number { font-size: 2rem; }
+		}
+    </style>
+</head>
+<body>
+	
+	<div id="popupOverlay" class="popup-overlay">
+		<div class="popup-box">
+			<p style="font-family: 'Kalam'; color: var(--gold); margin: 0; font-size: 1.2rem;">॥ श्री गणेशाय नमः ॥</p>
+			<h2>Join the Celebration</h2>
+			
+			<p id="popup-desc">Support the landmark Ganeshotsav in Ingolstadt.</p>
+
+			<div id="popup-content-area">
+				<div class="popup-actions">
+					<a href="javascript:void(0)" class="popup-btn food-btn" onclick="showFoodDetails(event)">
+						<span class="btn-icon">🍽️</span>
+						<div class="btn-text">
+							<strong>Food Festival</strong>
+							<span>Book Your Stall</span>
+						</div>
+					</a>
+					
+					<a href="javascript:void(0)" class="popup-btn sponsor-btn" onclick="showSponsorDetails(event)">
+						<span class="btn-icon">🤝</span>
+						<div class="btn-text">
+							<strong>Sponsor Us</strong>
+							<span>Partner with us</span>
+						</div>
+					</a>
+
+					<a href="javascript:void(0)" class="popup-btn donation-btn" onclick="showDonationDetails(event)">
+						<span class="btn-icon">🌺🙏</span>
+						<div class="btn-text">
+							<strong>Seva & Donation</strong>
+							<span>Help Us Celebrate</span>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<button class="popup-close" onclick="closePopup()">Continue to Site</button>
+		</div>
+	</div>
+    <div class="main-container" id="inviteContainer">
+        <div class="roller-top"></div>
+
+        <div class="scroll-paper">
+            <div class="festive-bg" id="petalContainer"></div>
+
+            <div class="content">
+                <img src="photos/Logo.png" alt="Logo" class="main-logo">
+                <p style="font-family: 'Kalam'; color: var(--bright-gold); font-size: 1.5rem; margin: 0;">॥ श्री गणेशाय नमः ॥</p>
+                <h4 style="letter-spacing: 3px; font-size: 0.75rem; opacity: 0.8; margin-bottom: 20px;">INDIAN NOMADS IN INGOLSTADT e.V.</h4>
+                
+                <h1 class="main-title">GANESHOTSAV 2026</h1>
+                <h2 style="color: var(--bright-gold); font-family: 'Cinzel Decorative'; margin-bottom: 30px;">इंगोलस्टाटचा राजा</h2>
+                
+                <img src="photos/ganesha.png" alt="Ganesha" style="width: 85%; max-width: 800px; filter: drop-shadow(0 0 20px var(--bright-gold)); margin-bottom: 40px;">
+
+                <div class="info-container-box">
+                    <span style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; color: var(--bright-gold);">Divine Dates</span>
+                    <h2 style="font-size: 2rem; color: #fff; margin: 10px 0;">SEPT 14<sup>th</sup> — SEPT 19<sup>th</sup></h2>
+                    <a href="https://maps.google.com/?q=Exerzierhaus+Klenzepark+Ingolstadt" target="_blank" class="map-link-combined">
+                    📍 Exerzierhaus Klenzepark, Ingolstadt
+                    </a>
+                    <br>
+                    <div class="impact-badge">FREE ENTRY</div>
+                </div>
+
+                <div class="purpose-section">
+                    <span class="section-label">The Spirit of Ingolstadt</span>
+                    <h2 class="section-headline">Tradition, Unity & Togetherness</h2>
+                    <p class="section-subtext">A heartfelt initiative that celebrates togetherness and cultural pride.</p>
+
+                    <h3 style="font-family: 'Cinzel Decorative'; font-size: 1.6rem; color: var(--maroon); margin-bottom: 20px;">Our Vision</h3>
+                    <div class="bento-grid">
+                        <div class="bento-card">
+                            <span class="card-title">Spiritual Authenticity</span>
+                            <p class="card-desc">Ensuring every Vidhi and Aarti is performed with Vedic precision.</p>
+                        </div>
+                        <div class="bento-card">
+                            <span class="card-title">Cultural Resonance</span>
+                            <p class="card-desc">Showcasing the thunderous energy of Dhol-Tasha and Lezim.</p>
+                        </div>
+                        <div class="bento-card">
+                            <span class="card-title">Social Inclusion</span>
+                            <p class="card-desc">Building a cultural bridge between the Indian Diaspora and neighbors.</p>
+                        </div>
+                        <div class="bento-card">
+                            <span class="card-title">Sustainable Legacy</span>
+                            <p class="card-desc">A community-driven festival that remains a permanent jewel.</p>
+                        </div>
+                    </div>
+
+                    <div class="journey-layout">
+                        <div class="journey-left">
+                            <h2 class="journey-title">Our Journey</h2>
+                            <p class="journey-text">
+                                 Indian Nomads in Ingolstadt e.V. was built on a simple feeling—the longing for home. What began as a small vision among friends has evolved into a landmark cultural event.
+                            </p>
+                            <div class="timeline-container">
+                                <div class="timeline-item">
+                                    <span class="timeline-year">1893</span>
+                                    <span class="timeline-title">Birth of Sarvajanik Ganeshotsav</span>
+                                    <p class="timeline-desc">Lokmanya Bal Gangadhar Tilak transformed Ganesh Chaturthi from a private home ritual into a powerful public festival in Pune. This step turned the celebration into a symbol of unity, cultural pride, and collective strength across society.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-year">1893</span>
+                                    <span class="timeline-title">Establishment of Shri Kasba Ganpati Mandal</span>
+                                    <p class="timeline-desc">Shri Kasba Ganpati Sarvajanik Ganesh Mandal was established in Pune, marking one of the earliest and most significant milestones in the history of public Ganeshotsav. As the revered Gramdaivat of the city, it played a foundational role in shaping the organized celebration of Ganesh Chaturthi. Its enduring traditions of devotion, discipline, and community participation laid the cultural and spiritual groundwork that continues to influence Ganeshotsav practices in India and across the world today.</p>
+                                </div>
+								<div class="timeline-item">
+                                    <span class="timeline-year">Late 19th–20th Century</span>
+                                    <span class="timeline-title">Rise of Manache Ganpati</span>
+                                    <p class="timeline-desc">In Pune, the roots of public Ganeshotsav are deeply anchored in the tradition of the Manache Ganpati, the most revered and historically significant Ganpati mandals of the city. This distinguished group includes Shri Kasba Ganpati Sarvajanik Ganesh Mandal (the Gramdaivat of Pune), along with Tambdi Jogeshwari, Guruji Talim, Tulshibaug, and Kesariwada Ganpati.Collectively, these mandals form the enduring cultural and spiritual framework of Pune’s Ganeshotsav tradition. Their legacy has shaped the public celebration of the festival through values of discipline, devotion, and community unity, serving as a model that continues to inspire Ganeshotsav celebrations across India and around the world.</p>
+                                </div>
+								<div class="timeline-item">
+                                    <span class="timeline-year">2025</span>
+                                    <span class="timeline-title">First 5-Day Ganpati Celebration in Ingolstadt (इंगोलस्टाटचा राजा)</span>
+                                    <p class="timeline-desc">A historic milestone for the Indian community as Ingolstadt hosts its first-ever 5-day Ganpati celebration, proudly established as “इंगोलस्टाटचा राजा.” This marks a significant beginning of collective devotion, cultural unity, and shared traditions in Germany, bringing the community together in celebration and strengthening cultural roots far from home..</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-year">2026</span>
+                                    <span class="timeline-title">इंगोलस्टाटचा राजा (Upcoming Edition)</span>
+                                    <p class="timeline-desc">Ingolstadt is all set to come alive once again with Ganeshotsav 2026—bigger, brighter, and more vibrant than ever before. With growing participation, deeper devotion, and an even stronger sense of togetherness, this year promises an unforgettable celebration filled with energy, culture, and tradition. As the community unites once again, Ganeshotsav in Ingolstadt continues to evolve into a powerful cultural legacy in Europe, celebrating faith with renewed spirit and enthusiasm.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="journey-right">
+                            
+                            <div class="photo-stack">
+								<div class="scatter-photo">
+									<img src="photos/vision1.png" alt="Journey 1">
+								</div>
+								<div class="scatter-photo">
+									<img src="photos/vision 3.png" alt="Journey 2">
+								</div>
+								<div class="scatter-photo">
+									<img src="photos/vision 2.png" alt="Journey 3">
+								</div>
+								<div class="scatter-photo">
+									<img src="photos/vision 4.jpg" alt="Journey 3">
+								</div>
+							</div>
+                        </div>
+                    </div> 
+					<div style="margin-top: 50px;">
+                        <span class="section-label">Moments of Devotion</span>
+                        <h2 class="section-headline">Festival Gallery 2025</h2>
+
+                        <span class="row-label">📸 Captured Memories</span>
+                        <div class="gallery-slider">
+                            <div class="gallery-item photo-item">
+                                <img src="photos/gallery 11.jpeg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+                            <div class="gallery-item photo-item">
+                                <img src="photos/gallery 1.jpeg"onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+                            <div class="gallery-item photo-item">
+                                <img src="photos/gallery 4.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+                            <div class="gallery-item photo-item">
+                                <img src="photos/gallery 2.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 12.jpeg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 3.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 6.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 8.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 9.jpeg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 5.png" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 15.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 14.jpeg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 17.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 18.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 19.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 20.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (1).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (3).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (4).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (5).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (6).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (10).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (15).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (16).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (17).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (19).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (21).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (22).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (25).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (26).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (27).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (28).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (29).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (30).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (32).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (33).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (34).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (35).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (37).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (38).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (39).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (41).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (42).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (43).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (45).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (46).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (47).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (48).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (49).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (50).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (51).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (52).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (53).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (54).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (55).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (56).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/Gallery 21 (57).jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+							<div class="gallery-item photo-item">
+                                <img src="photos/gallery 16.jpg" onclick="openLightbox(this.src)" style="cursor: zoom-in;">
+                            </div>
+                        </div>
+						<div id="lightbox" style="display: none; position: fixed; z-index: 3000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); cursor: pointer; align-items: center; justify-content: center;" onclick="this.style.display='none'">
+							<span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold;">&times;</span>
+							<img id="lightbox-img" src="" style="max-width: 90%; max-height: 90%; border: 3px solid var(--bright-gold); border-radius: 10px;">
+						</div>
+
+                        <span class="row-label">🎥 Energy in Motion</span>
+                        <div class="gallery-slider">
+                            <div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/aart 1.jpeg">
+                                    <source src="videos/aarti 2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/gallery 4.png">
+                                    <source src="videos/aarti 3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/aarti 2.jpeg">
+                                    <source src="videos/aarti 1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/gallery 11.jpeg">
+                                    <source src="videos/visarjan 1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							 <div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/Thumbnail 6.jpg">
+                                    <source src="videos/visarjan 6.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/thumbnail 2.jpg">
+                                    <source src="videos/visarjan 2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/thumbnail 3.jpg">
+                                    <source src="videos/visarjan 3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/thumbnail 5.jpg">
+                                    <source src="videos/visarjan 5.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/thumbnail 4.jpg">
+                                    <source src="videos/visarjan 4.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							<div class="gallery-item video-item">
+                                <span class="video-badge">▶ VIDEO</span>
+                                <video controls poster="photos/thumbnail 7.jpg">
+                                    <source src="videos/visarjan 7.mp4" type="video/mp4">
+                                </video>
+                            </div>
+							
+                        </div>
+                        <span class="slider-hint">Swipe to see more →</span>
+                    </div>
+					
+					<div style="margin-top: 50px; padding: 20px 0; border-top: 1px solid #eee;">
+						<span class="section-label">Our Legacy</span>
+						<h2 class="section-headline">Festival Impact (Past 1 Year)</h2>
+						
+						<div class="impact-grid">
+							<div class="impact-stat-card">
+								<span class="stat-number stat-purple">50K+</span>
+								<span class="stat-label">Social Reach</span>
+							</div>
+
+							<div class="impact-stat-card">
+								<span class="stat-number stat-orange">1.5K+</span>
+								<span class="stat-label">Festival Footfall</span>
+							</div>
+
+							<div class="impact-stat-card" style="border-top: 1px dotted #ccc; padding-top: 20px;">
+								<span class="stat-number stat-green">600+</span>
+								<span class="stat-label">Visarjan Day Attendance</span>
+							</div>
+							<div class="impact-stat-card" style="border-top: 1px dotted #ccc; padding-top: 20px;">
+								<span class="stat-number stat-red">150+</span>
+								<span class="stat-label">Daily Aarti Attendance</span>
+							</div>
+
+							<div class="impact-stat-card" style="border-top: 1px dotted #ccc; padding-top: 20px;">
+								<span class="stat-number stat-pink">60+</span>
+								<span class="stat-label">Volunteers</span>
+							</div>
+						</div>
+					</div>
+					
+                    <div style="margin-top: 50px; background: #fffcf5; padding: 30px; border-radius: 15px;">
+                        <span class="section-label">Voices of the Vibe</span>
+                        <h2 class="section-headline">Community Voices</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"Om Dhol Tasha brought such incredible energy that it felt like being right back in India; it was truly a home away from home in the heart of Ingolstadt!"</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Shilpa</b>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"The 5-day Ganapati festival in Ingolstadt was a truly special experience. The daily pooja filled the atmosphere with such positivity and peace. It was more than just an event; we created beautiful memories as one family and one community. Looking forward to celebrating with this same unity next year!<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Aniket.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"An incredible event that truly brought our traditions to Europe! I'm proud to be part of this Festival and look forward to making a bigger impact together next year. Ganpati Bappa Morya!"<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Avinash.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"The perfect blend of culture and community spirit! These five days were full of energy, and I'm already counting down the days and excited for the next year's celebration!"<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Pankhuri.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"The perfect mix of devotion and celebration. From the beautiful Murti to the authentic Indian flavors, it was a 10/10 experience. It’s wonderful to see our traditions thriving here in Germany"<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Mahesh.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"It didn't feel like an 'event'—it felt like a giant family reunion. Seeing the community come together to volunteer and celebrate was heartwarming. Can’t wait for next year!"<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Akhil.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"The best Ganesh Chaturthi celebration in the region! The vibe was so authentic that we forgot we were in Bavaria for a moment. Proud to be part of the 'Indostadt' community!"<br> Ganapati Bappa Morya!."</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Prasad.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"Modak stole the show..Aai chi athvan ali"</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Sachin.</b>
+                            </div>
+							<div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--button-orange); box-shadow: 0 5px 10px rgba(0,0,0,0.05);">
+                                <p style="font-style: italic; color: #555;">"Between the incredible Dhol-Tasha performance and the amazing food stalls, we didn't just celebrate a festival; we built lifelong friendships and a vibrant community right here in Ingolstadt"</p>
+                                <b style="color: var(--maroon); font-size: 0.8rem;">— Ritu.</b>
+                            </div>
+						
+                        </div>
+                    </div>
+
+                    <div class="info-container-box" style="margin-top: 40px; border-radius: 20px;">
+                        <span style="font-family: 'Cinzel Decorative'; color: var(--bright-gold); font-size: 1.2rem;">2026 Attractions</span>
+                        <div class="reveal-wrapper">
+                            <div class="reveal-banner">✨ Revealing Soon ✨</div>
+                            <div class="hold-content" style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-top:20px;">
+                                <span>🍽️ Maha Prasad</span><span>🥁 Dhol Tasha</span>
+                                <span>🎨 Art Events</span><span>🌺 Daily Aarti</span>
+                            </div>
+                        </div>
+                    </div>
+					
+
+                    <div class="action-container">
+                        <a href="https://www.instagram.com/indian_nomads_ingolstadt?igsh=djh3NGE0cWtjdmpo&utm_source=qr" class="social-cta insta-btn">
+                            <span>📸 Follow on Instagram</span>
+                        </a>
+                        <a href="https://chat.whatsapp.com/HhF7FXBbYen0Uz07yzHlSu" class="social-cta wa-btn">
+                            <span>💬 Join WhatsApp Group</span>
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 50px; border-top: 2px dashed var(--gold); padding-top: 30px;">
+                        <span class="section-label">Helpful Info</span>
+                        <h2 class="section-headline">FAQs</h2>
+                        <details style="cursor: pointer;">
+                            <summary style="font-weight: 700; color: var(--maroon);">Is there an entry fee?</summary>
+                            <p style="padding: 10px; color: #555;">No, entry is free for everyone! We welcome all cultures to celebrate with us.</p>
+                        </details>
+						<details style="cursor: pointer;">
+                            <summary style="font-weight: 700; color: var(--maroon);">How can I reach the venue?</summary>
+                            <p style="padding: 10px; color: #555;">The venue Exerzierhaus Klenzepark is located in a central and well-connected area of Ingolstadt, making it easy to reach for all visitors.If you are nearby, the venue is easily accessible by a pleasant walk through Klenzepark. For public transport users, the nearest bus stops are Stadttheater and Brückenkopf, both of which are within short walking distance from the venue.</p>
+                        </details>
+						<details style="cursor: pointer;">
+                            <summary style="font-weight: 700; color: var(--maroon);">what are the nearby parking options?</summary>
+                            <p style="margin-bottom: 10px; margin-top: 0;">There are several convenient choices near the location, including:</p>
+							<ol style="margin: 0; padding-left: 25px; line-height: 1.8;">
+								<li>Tiefgarage Reduit Tilly (P4)</li>
+								<li>Parkplatz Theater Ost (P1)</li>
+								<li>Congressgarage</li>
+								<li>Theater Bus Parkplatz</li>
+								<li>Tiefgarage Schloss (P2)</li>
+								<li>Tiefgarage “Am Theater”</li>
+							</ol>
+                        </details>
+						<details style="cursor: pointer;">
+                            <summary style="font-weight: 700; color: var(--maroon);">Can we book Aarti during the event? Is there a fee involved?</summary>
+                            <p style="padding: 10px; color: #555;">Yes, devotees can book the daily Aarti at Exerzierhaus Klenzepark in Ingolstadt.To support the arrangements, decorations, prasad, and overall event expenses, a small Aarti contribution/booking fee is requested for reserved participation. The devotee who books the slot will have the opportunity to perform the Aarti themselves, making it a personal and meaningful spiritual experience.Aarti slots are limited and will be allocated on a first-come, first-served basis or prior booking, depending on availability. We encourage devotees to reserve in advance for their preferred date.</p>
+                        </details>
+						<details style="cursor: pointer;">
+                            <summary style="font-weight: 700; color: var(--maroon);">How can I make a donation?</summary>
+                            <p style="padding: 10px; color: #555;"> For donation-related inquiries, please contact us at +4915778494287. We’ll be happy to assist you with the process.  </p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="footer-banner">
+                    <h1 style="font-family: 'Great Vibes'; font-size: clamp(3rem, 10vw, 4.5rem); color: var(--bright-gold); margin: 0; filter: drop-shadow(0 0 15px var(--bright-gold));">
+                        Ganpati Bappa Morya!
+                    </h1>
+                    <p style="font-family: 'Kalam'; color: white; margin-top: 10px; opacity: 0.8;">See you in September 2026</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="roller-bottom" id="bottomRoller"></div>
+    </div>
+
+    <script>
+        function createPetals() {
+            const container = document.getElementById('petalContainer');
+            const colors = ['#ff4500', '#ffa500', '#ffd700'];
+            for (let i = 0; i < 25; i++) {
+                const petal = document.createElement('div');
+                petal.className = 'petal';
+                const size = Math.random() * 15 + 10 + 'px';
+                petal.style.width = size; petal.style.height = size;
+                petal.style.backgroundColor = colors[Math.floor(Math.random() * 3)];
+                petal.style.left = Math.random() * 100 + 'vw';
+                petal.style.animationDelay = Math.random() * 8 + 's';
+                container.appendChild(petal);
+            }
+        }
+		
+        window.onload = () => {
+            const container = document.getElementById('inviteContainer');
+            const bottomRoller = document.getElementById('bottomRoller');
+            createPetals();
+            setTimeout(() => {
+                container.classList.add('active'); 
+                bottomRoller.style.top = "100%"; 
+                setTimeout(() => { document.body.style.overflowY = "auto"; }, 2500);
+            }, 500);
+        };
+		
+		function closePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                // This allows the user to scroll the main page ONLY after closing the popup
+                document.body.style.overflowY = "auto";
+            }, 500);
+        }
+
+        // Close popup if user clicks outside the white box
+        window.onclick = function(event) {
+            const overlay = document.getElementById('popupOverlay');
+            if (event.target == overlay) {
+                closePopup();
+            }
+        }
+		/* --- POPUP INTERACTION LOGIC --- */
+
+// 1. Function for Food Stall (Google Form Link)
+		function showFoodDetails(event) {
+			event.preventDefault();
+			const contentArea = document.getElementById('popup-content-area');
+			const description = document.getElementById('popup-desc');
+
+			if (contentArea && description) {
+				description.innerText = "Join our 3-Day Food Festival!";
+				
+				contentArea.innerHTML = `
+					<div style="background: rgba(99, 0, 0, 0.05); padding: 25px; border-radius: 15px; border: 2px dashed #630000; text-align: center; animation: fadeIn 0.4s ease;">
+						<h3 style="color: #630000; margin: 0 0 10px 0; font-family: 'Cinzel Decorative';">Stall Registration</h3>
+						<p style="font-size: 0.9rem; color: #333; margin-bottom: 20px;">We invite you to showcase traditional delicacies. Please fill out the form below to book your spot.</p>
+						
+						<a href="https://forms.gle/QLLmZ8Em1oQzL6hb9" target="_blank" 
+						   style="display: inline-block; background: #630000; color: #FFD700; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+						   📋 FILL GOOGLE FORM
+						</a>
+
+						<div style="border-top: 1px solid #ddd; padding-top: 10px;">
+							<button onclick="location.reload()" style="background:none; border:none; color:#630000; text-decoration:underline; cursor:pointer; font-weight:bold;">← Back to options</button>
+						</div>
+					</div>
+				`;
+			}
+		}
+
+		// 2. Function for Sponsorship (Contact Info)
+		function showSponsorDetails(event) {
+			event.preventDefault();
+			const contentArea = document.getElementById('popup-content-area');
+			const description = document.getElementById('popup-desc');
+
+			if (contentArea && description) {
+				description.innerText = "Partner with Ingolstatcha Raja 2026.";
+				
+				contentArea.innerHTML = `
+					<div style="background: rgba(184, 134, 11, 0.1); padding: 25px; border-radius: 15px; border: 2px dashed #b8860b; text-align: left; animation: fadeIn 0.4s ease;">
+						<h3 style="color: #630000; margin: 0 0 10px 0; font-family: 'Cinzel Decorative';">Sponsorship Inquiry</h3>
+						<p style="font-size: 0.95rem; line-height: 1.6; color: #333;">
+							To contribute towards the Ganesh Chaturthi celebrations, please contact us at: <br><br>
+							<strong>📧 Email:</strong> indiannomads07@gmail.com<br>
+							<strong>📞 Phone:</strong> +49 15778494287
+						</p>
+						<div style="text-align: center; margin-top: 15px; border-top: 1px solid #ddd; padding-top: 10px;">
+							<button onclick="location.reload()" style="background:none; border:none; color:#630000; text-decoration:underline; cursor:pointer; font-weight:bold;">← Back to options</button>
+						</div>
+					</div>
+				`;
+			}
+		}
+
+		// 3. Function for Seva & Donations (Bank Details)
+		function showDonationDetails(event) {
+			event.preventDefault();
+			const contentArea = document.getElementById('popup-content-area');
+			const description = document.getElementById('popup-desc');
+
+			if (contentArea && description) {
+				description.innerText = "Your Seva helps us celebrate together.";
+				
+				contentArea.innerHTML = `
+					<div style="background: rgba(40, 53, 147, 0.08); padding: 25px; border-radius: 15px; border: 2px dashed #1a237e; text-align: left; animation: fadeIn 0.4s ease;">
+						<h3 style="color: #1a237e; margin: 0 0 10px 0; font-family: 'Cinzel Decorative';">Contact Details</h3>
+						<div style="background: white; padding: 15px; border-radius: 10px; font-size: 0.9rem; color: #333; line-height: 1.8;">
+							<strong></strong> Celebrate Bappa’s blessings by preserving our roots. Contact us for Donations +4915778494287 <br>
+						</div>
+						<div style="text-align: center; margin-top: 15px;">
+							<button onclick="location.reload()" style="background:none; border:none; color:#1a237e; text-decoration:underline; cursor:pointer; font-weight:bold;">← Back to options</button>
+						</div>
+					</div>
+				`;
+			}
+		}
+		function openLightbox(imageSrc) {
+			const lightbox = document.getElementById('lightbox');
+			const lightboxImg = document.getElementById('lightbox-img');
+			
+			lightboxImg.src = imageSrc;
+			lightbox.style.display = 'flex'; // Shows the hidden div
+		}
+		
+    </script>
+</body>
+</html>
